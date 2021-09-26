@@ -27,7 +27,7 @@ function game(){
     let numberWin = 0;
     let numberLose = 0;
     for(let i = 0; i < 5; i++){
-        let playerSelection = prompt("Rock, paper or scissor ?")
+        let playerSelection = prompt("Rock, paper or scissors?")
         let computerSelection = computerPlay();
         alert(`Computer has selected ${computerSelection}`);
         let result = playRound(playerSelection, computerSelection);
