@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(240, 230, 140), rgba(240, 230, 140, 0.151), rgb(240, 230, 140));
+    height: 100vh;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+@media(min-width: 768px){
+    .container{
+        width: 60%;
+        padding: 5rem;
+    }
+}
+.title {
+    color: black;
+    font-size: 2.5rem;
+}
+@media(min-width: 768px){
+    .title{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+}
+
+.container-btn{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+@media(min-width: 768px){
+    .container-btn{
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+.btn {
+    width: 50%;
+    background: transparent;
+    border: none;
+    border-radius: 1rem;
+    width: 35%;
+    height: 10rem;
+    background-size: contain;    
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 0.15s cubic-bezier(0.54, -1.97, 0.46, 3.67);
+}
+@media(min-width: 768px){
+    .btn{
+        width: 30%;
+        height: 20rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.btn:hover{
+    background: linear-gradient(0deg, rgba(131, 93, 93, 0.144), rgba(131, 93, 93, 0.944));
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.rock {
+    background-image: linear-gradient(0deg, rgba(131, 93, 93, 0.144), rgba(131, 93, 93, 0.144)), url(img/icons8_hand_rock_96px.png);
+}
+.paper {
+    background-image: linear-gradient(0deg, rgba(131, 93, 93, 0.144), rgba(131, 93, 93, 0.144)), url(img/icons8_hand_96px.png);
+}
+.scissors {
+    background-image: linear-gradient(0deg, rgba(131, 93, 93, 0.144), rgba(131, 93, 93, 0.144)), url(img/icons8_hand_scissors_96px.png);
+}
+.score {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+@media(min-width: 768px){
+    .result{
+        font-size: 2.5rem;
+    }
+    .score {
+        font-size: 2.5rem;
+    }
+}
+

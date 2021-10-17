@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="js/scriptJS.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <button onclick="game()">Click Here</button>
+    <div class="container">
+        <h1 class="title">...play Rock Paper Scissors</h1>
+        <div class="container-btn">
+            <button class="btn rock" onclick="game('rock')">Rock</button>
+            <button class="btn paper" onclick="game('paper')">Paper</button>
+            <button class="btn scissors" onclick="game('scissors')">Scissors</button>
+        </div>
+        <div class="result"></div>
+        <div class="score"></div>
+    </div>
 </body>
 </html>
