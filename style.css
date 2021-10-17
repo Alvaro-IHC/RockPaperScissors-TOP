@@ -46,7 +46,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
 }
 @media(min-width: 768px){
     .container-btn{
@@ -60,8 +59,8 @@ body{
     background: transparent;
     border: none;
     border-radius: 1rem;
-    width: 35%;
-    height: 10rem;
+    width: 50%;
+    height: 30%;
     background-size: contain;    
     background-position: center;
     background-repeat: no-repeat;
@@ -89,6 +88,9 @@ body{
 }
 .scissors {
     background-image: linear-gradient(0deg, rgba(131, 93, 93, 0.144), rgba(131, 93, 93, 0.144)), url(img/icons8_hand_scissors_96px.png);
+}
+.result {
+    padding-top: 2rem;
 }
 .score {
     padding-bottom: 2rem;
